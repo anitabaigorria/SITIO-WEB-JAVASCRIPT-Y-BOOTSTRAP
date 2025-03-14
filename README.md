@@ -18,12 +18,19 @@ Por ejemplo: Visual Studio Code o Bloc de notas
 
 * Descargar o linkear el CDN (Content Delivery Network) de Bootstrap provisto por su [sitio web](https://getbootstrap.esdocu.com/docs/5.3/getting-started/download/).
 
+```
+También puedes simplemente linkearla al descargar el repositorio, la carpeta lleva el nombre de "bootstrap-5.3.3-dist"
+```
+
 * Adémas, también debes descargar o linkear la biblioteca de íconos de Bootstrap provista por su [sitio web](https://icons.getbootstrap.com/).
 
+```
+También puedes simplemente linkearla al descargar el repositorio, la carpeta lleva el nombre de "bootstrap-icons-1.11.3"
+```
 
 ## Vista en vivo 📦
 
-Podés descargar el proyecto y visualizarlo localmente haciendo click en el archivo **index.html** o haciendo click en el siguiente **[enlace](https://github.com/anitabaigorria/SITIO-WEB-JAVASCRIPT-Y-BOOTSTRAP)**
+Podés descargar el proyecto y visualizarlo localmente haciendo click en el archivo **index.html** o haciendo click en el siguiente **[enlace](https://anitabaigorria.github.io/SITIO-WEB-JAVASCRIPT-Y-BOOTSTRAP/)**
 
 ## Autor/es ✒️
 
@@ -32,4 +39,4 @@ Podés descargar el proyecto y visualizarlo localmente haciendo click en el arch
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (MIT LICENSE) - mira el archivo [LICENSE.md](LICENSE.txt) para detalles
+Este proyecto está bajo la Licencia (MIT LICENSE) - mira el archivo [LICENSE.txt](LICENSE.txt) para detalles
