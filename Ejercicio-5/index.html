@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-secondary container">
+    <section class="container shadow rounded-bottom bg-light text-center p-md-4">
+        <h1><a href="../index.html" class="text-decoration-none text-dark">Trabajo Práctico Nº 9 - Laboratorio I</a></h1>
+        <h2 class="pt-3"><a href="../index.html" class="text-decoration-none text-dark">Algoritmos / Javascript /  Bootstrap</a></h2>
+    </section>
+
+    <nav class="mt-md-3">
+        <section class="d-flex flex-column flex-md-row justify-content-start">
+          <a href="../index.html"><button type="button" class="btn btn-lg btn-light rounded fw-bold p-md-3"><span class="bi bi-arrow-left-circle mx-2"></span>Volver</button></a>
+        </section>
+    </nav>
+
+ <main>
+     <section class="row justify-content-center align-items-center m-md-5">
+         <form action="php/ejer5.php" method="get" class="col-6 bg-light p-4 border border-success">
+            <h2 class="m-2 mb-4">Inicio de sesión</h2>
+
+            <section class="mb-3">
+            <label for="usur" class="form-label">Usuario</label>
+            <input type="text" id="usur" class="container-fluid form-check">
+            </section>
+
+            <section class="row mb-4">
+                <article class="col-10">
+                  <label for="contra" class="form-label">Contraseña</label>
+                  <input type="password" id="contra" class="container-fluid form-check">
+                </article>
+                <article class="col-2">
+                    <img class="w-50 mt-4" id="imagen-mostrar" src="img/openeye.png" alt="Mostrar Contraseña">
+                    <!-- <img class="w-50 mt-4" src="img/closeeye.png" alt="Ocultar Contraseña"> -->
+                </article>
+            </section>
+            <input type="submit" value="Enviar" class="btn btn-success">
+         </form>
+     </section>
+ </main>
+
+ <footer class="rounded-top bg-light bg-opacity-75 container-fluid p-1 d-flex flex-md-row justify-content-center">
+    <section class="bg-secondary bg-opacity-25 border border-secondary rounded m-md-4 p-3">
+        <a href="mailto:abaigorriafacet@gmail.com" class="text-center text-dark text-decoration-none fs-6 fw-bold">Realizado por: Baigorria Ana Paula</a>
+    </section>
+</footer>
+
+ <script src="js/ejer5.js"></script>
+</body>
+</html>

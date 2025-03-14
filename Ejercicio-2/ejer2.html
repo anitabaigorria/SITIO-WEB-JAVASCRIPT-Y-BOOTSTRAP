@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-secondary container">
+
+    <section class="container shadow rounded-bottom bg-light text-center p-md-4">
+        <h1><a href="../index.html" class="text-decoration-none text-dark">Trabajo Práctico Nº 9 - Laboratorio I</a></h1>
+        <h2 class="pt-3"><a href="../index.html" class="text-decoration-none text-dark">Algoritmos / Javascript /  Bootstrap</a></h2>
+    </section>
+
+    <nav class="mt-md-3">
+        <section class="d-flex flex-column flex-md-row justify-content-start">
+          <a href="../index.html"><button type="button" class="btn btn-lg btn-light rounded fw-bold p-md-3"><span class="bi bi-arrow-left-circle mx-2"></span>Volver</button></a>
+        </section>
+    </nav>
+
+    <main>
+       
+        <section class="bg-light border border-dark shadow rounded p-md-3 m-md-4">
+            <h2>Algoritmo planteado - "Máquina"</h2>
+            <ul>
+                <li><strong>ENTRADA:</strong> producto, billete: entero</li>
+                <li><strong>SALIDA:</strong> total:real positivo; vuelto,recG,recA,recE: enteros positivos</li>
+                <li><strong>V. AUX:</strong> -</li>
+                <li><strong>CONSTANTES:</strong> cantG=40,cantA=35,cantE=20, precioG=1250, precioA=700, precioE=1500, precioMant= 50.000</li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><strong>A0.</strong>inicializar</li>
+                <li><strong>A1.</strong>LEER (producto,billete)</li>
+                <li><strong>A2.</strong>verificarCompra</li>
+                <li><strong>A3.</strong>ESCRIBIR (total,vuelto,cantA,cantE,cantG,recA,recE,recG)</li>
+                <li><strong>A4.</strong>PARAR</li>
+            </ul>
+            <ul class="list-unstyled">
+                <li><strong>A0.</strong> inicializar</li> 
+                <li><strong>A0.1</strong> cantG --> 40</li>
+                <li><strong>A0.2</strong> recG --> 0</li>
+                <li><strong>A0.3</strong> cantA --> 35</li>
+                <li><strong>A0.4</strong> recA --> 0</li>
+                <li><strong>A0.5</strong> cantE --> 20</li>
+                <li><strong>A0.6</strong> recE --> 0</li>
+                <li><strong>A0.7</strong> precioA --> 700</li>
+                <li><strong>A0.8</strong> precioE --> 1500</li>
+                <li><strong>A0.9</strong> precioG --> 1250</li>
+                <li><strong>A0.10</strong> vuelto --> 0</li>
+            </ul>
+            <ul class="list-unstyled">
+                <strong>A2.</strong> verificarCompra</li>
+                <li><strong>A2.1</strong> MIENTRAS (0 <= total <= 50000)</li>
+                <li>SEGÚN(producto) </li>
+                <li> "GASEOSA": SI (billete>precioG y cantG>0) ENTONCES</li>
+                <li>    cantG <-- cantG - 1</li>
+                <li>    recG <-- recG + precioG</li>
+                <li>    vuelto <-- billete - precioG</li>
+                <li>  SINO</li>
+                <li>    vuelto <-- billete</li>
+                <li>    ESCRIBIR('Dinero Insuficiente')</li>  
+                <li> Fin_SI</li>
+                <li> "AGUA":  SI (billete>precioA y cantA>0)ENTONCES</li>
+                <li>    cantA <-- cantA - 1</li>
+                <li>    recA <-- recA + precioA</li>
+                <li>    vuelto <-- billete - precioA</li>
+                <li>  SINO</li>
+                <li>    vuelto <-- billete</li>
+                <li>    ESCRIBIR('Dinero Insuficiente')  </li>
+                <li> Fin_SI</li>
+                <li> "ENERGIZANTE": SI (billete>precioE y cantE>0) ENTONCES</li>
+                <li>    cantE <-- cantE - 1</li>
+                <li>    recE <-- recE + precioE</li>
+                <li>    vuelto <-- billete - precioE</li>
+                <li>  SINO</li>
+                <li>    vuelto <-- billete</li>
+                <li>    ESCRIBIR('Dinero Insuficiente')</li>  
+                <li> Fin_SI</li>
+                <li>Fin_SEGUN</li>
+                <li>total <-- recG + recA + recE</li>
+                <li>Fin_MIENTRAS </li>
+            </ul>
+        </section>
+
+        <section class="d-flex flex-row">
+            <button class="btn btn-dark shadow m-md-4 border border-2 border-light container-fluid" id="simulacion"><p class="pt-md-2 text-light fs-4 fw-bold">Iniciar Simulación</p></button>
+        </section>
+    </main>
+
+    <footer class="rounded-top bg-light bg-opacity-75 container-fluid p-1 d-flex flex-md-row justify-content-center">
+        <section class="bg-secondary bg-opacity-25 border border-secondary rounded m-md-4 p-3">
+            <a href="mailto:abaigorriafacet@gmail.com" class="text-center text-dark text-decoration-none fs-6 fw-bold">Realizado por: Baigorria Ana Paula</a>
+        </section>
+    </footer>
+    
+    <script src="js/ejer2.js"></script>
+</body>
+</html>
